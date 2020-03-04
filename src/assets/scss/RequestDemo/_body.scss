@@ -1,0 +1,153 @@
+@import "../variable";
+
+#request-for-demo {
+  background-size: cover;
+  background-image: url("../../images/Export/Request-Demo-BG.jpg");
+}
+.header-request-demo {
+
+  .header-border {
+    &::after {
+      content: "";
+      overflow: hidden;
+      position: absolute;
+      height: 6px;
+      max-width: 1366px;
+      width: 100%;
+      border-top: 1px solid #0a1f30;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  margin-top: -76px;
+  padding-top: 76px;
+
+  .right-header {
+    @include flexCustom(flex, flex-start, center);
+
+    // height: 172px;
+    width: 100%;
+    // padding-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    // border-left: 1px solid $borderColor;
+    // border-right: 1px solid $borderColor;
+    line-height: 0;
+    h1 {
+      padding-top: 55px;
+      @include font(136px, 800, normal, 0.75);
+      color: #ffffff;
+    }
+
+    h2 {
+      // @include font(3em, 800, normal, 3.01);
+      color: #ffffff;
+    }
+  }
+}
+#request-for-demo {
+  .submited-alert{
+    padding: 0 0 !important;
+    background-color: unset !important;
+    span{
+      line-height: 1.8;
+    }
+  }
+  .col-6 {
+    padding-right: 10px;
+    &:nth-child(2){
+      padding-left: 10px;
+      max-width: 49%;
+    }
+  }
+  &.body-big {
+    //background: #00111f;
+  }
+  .right-header h2 {
+    font-family: Muli;
+    font-size: 34px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    // line-height: 3.01;
+    letter-spacing: 1.7px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.email-request {
+  margin-top: -100px;
+  .email-notification {
+    padding: 0 41px;
+    padding-bottom: 80px;
+    margin-top: 24px;
+    border-left: 1px solid #0a1f30;
+
+    border-right: 1px solid #0a1f30;
+
+
+    .email-form {
+      // @include flexCustom(flex, flex-end, center);
+      // padding-top: 60px !important;
+      display: block;
+    }
+
+    .demo-slogan {
+      @include font(34px, 800, 1.7px, 2);
+    }
+
+    // padding: 6.3rem 1.8rem 0 6.1rem;
+    // background-image: url("../../images/banner-image.png");
+    background-size: cover;
+    // height: 770px;
+    &__text {
+      font-family: Muli;
+      font-size: 20px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #ffffff;
+      color: $white;
+      padding-bottom: 1.5rem;
+
+      span {
+        letter-spacing: 0;
+      }
+    }
+
+    &__form {
+      max-width: 1172px;
+      input,
+      textarea {
+        margin-top: 20px;
+        padding: $padding-lg-all;
+        border: $borderFrame;
+        width: 100%;
+        &::placeholder {
+          opacity: 0.7;
+          font-family: Muli;
+          font-size: 16px;
+          font-weight: 200;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: left;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+
+      button {
+        margin-top: 20px;
+      }
+
+      .large-input {
+        height: 100px;
+      }
+    }
+  }
+}

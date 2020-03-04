@@ -1,0 +1,204 @@
+@import './reset';
+@import './mixin';
+@import './variable';
+@import './nav';
+@import '../scss//Homepage/main';
+@import '../scss//Services//main';
+@import '../scss//About//main';
+@import '../scss/RequestDemo/main';
+@import '../scss/footer.scss';
+@import '../scss//Responsive/main';
+
+html {
+    scroll-behavior: smooth;
+}
+*{
+  font-family: $fontFamily-Muli;
+}
+body, a {
+color: black;
+font-size: 14px;
+font-family: $fontFamily-Muli;
+}
+.flex{
+  display: flex;
+}
+.j-center{
+justify-content: center;
+}
+.a-center{
+align-items: center;;
+}
+.submited-alert{
+  padding: 0 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 907px;
+  height: 50px;
+  background-color: rgba(21, 70, 214, .1);
+  span{
+      line-height: 1;
+      font-size: 16px;
+      font-weight: 200;
+      color: white;
+  }
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1366px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container-inner {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+.row {
+  margin-right : unset;
+  margin-left: unset;
+}
+
+//Class general
+.btn-sm-bluelight {
+    // (colorBorder, paddingSize, colorBg, fontColor)
+    @include btn-style($blueLight, $padding-sm-btn, $blueLight, $white);
+  }
+  
+  .btn-md-bluelight {
+    @include btn-style($blueLight, $padding-md-btn, $blueLight, $white);
+  }
+  
+  .btn-lg-bluelight {
+    @include btn-style($blueLight, $padding-lg-btn, $blueLight, $white);
+  }
+  
+  .btn-sm-white {
+    @include btn-style($blueLight, $padding-sm-btn, $white, $blueLight);
+  }
+  
+  .btn-md-white {
+    @include btn-style($blueLight, $padding-md-btn, $white, $blueLight);
+  }
+  
+  .btn-lg-white {
+    @include btn-style($blueLight, $padding-lg-btn, $white, $blueLight);
+  }
+  
+  .btn-sm-disable {
+    @include btn-style(
+      $bg-btn-disable,
+      $padding-sm-btn,
+      $bg-btn-disable,
+      #d5d3d3
+    );
+  }
+  
+  .btn-md-disable {
+    @include btn-style(
+      $bg-btn-disable,
+      $padding-md-btn,
+      $bg-btn-disable,
+      #d5d3d3
+    );
+  }
+  
+  .btn-lg-disable {
+    @include btn-style(
+      $bg-btn-disable,
+      $padding-lg-btn,
+      $bg-btn-disable,
+      #d5d3d3
+    );
+  }
+  
+  //font-size
+  .fs-13 {
+    font-size: 0.8125rem;
+  }
+  .fs-14 {
+    font-size: 0.875rem;
+  }
+  
+  .fs-16 {
+    font-size: 1rem;
+  }
+  
+  .fs-18 {
+    font-size: 1.125rem;
+  }
+  
+  .fs-20 {
+    font-size: 1.25rem;
+  }
+  
+  .fs-24 {
+    font-size: 1.5rem;
+  }
+  // font-weight
+  .fw-200 {
+    font-weight: 200;
+  }
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .fw-400 {
+    font-weight: 400;
+  }
+  
+  .fw-600 {
+    font-weight: 600;
+  }
+  
+  .fw-700 {
+    font-weight: 700;
+  }
+  
+  .fw-800 {
+    font-weight: 800;
+  }
+  
+  .fw-900 {
+    font-weight: 900;
+  }
+  
+  
+
+
+  // loading
+
+.icon-loading{
+  width: 25px;
+  height: 25px;
+.lds-dual-ring {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+}

@@ -1,0 +1,203 @@
+$borderColor: #ededed;
+.homepage {
+    position: relative;
+.body-mobile {
+    display: none;
+}
+.body, .body-mobile {
+    .smart-boxs {
+        .box {
+            display: flex;
+            align-items: center;
+            background-image: url('../../images/bg-box1.png');
+            height: 200px;
+            width: 32%;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-right: 2%;
+
+            h6 {
+                color: #ffffff;
+                @include font(23px, 800, 1.2px ,1.08);
+                margin-bottom: 20px;
+            }
+
+            p{
+                color: #ffffff;
+                @include font(14px, 300, 0.28px ,1.71); 
+                
+            }
+        }
+        .box2{
+            background-image: url('../../images/bg-box2.png');
+            max-width: 32%;
+        }
+
+        .box3{
+            background-image: url('../../images/bg-box3.png');
+            max-width: 32%;
+            margin-right: 0;
+        }
+
+    }
+    .slogan {
+        .left {
+            border-right: 1px solid $borderColor;
+            padding-top: 100px;
+            padding-bottom: 83px;
+            width: 34%;
+            .text-box {
+                text-align: right;
+                padding-top:20px ;
+                padding-bottom: 20px;
+                padding-right: 12px;
+                @include font(50px, 800, normal, 0.52);
+                color: $blueLight;
+                border-right: 3px solid $blueLight;
+            }
+        }
+
+        .right {
+            padding-top: 100px;
+            padding-bottom: 83px;
+            width: 66%;
+            border-right: 1px solid $borderColor;
+            .text-content {
+                padding-top: 10px;
+                padding-bottom: 8px;
+                padding-left: 20px;
+                h1 {
+                    @include font(32px,800, 1.6px, 0.81);
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    @include font(14px, 300, 0.28px, 1.71);
+                }
+            }
+        }
+    }
+
+    .features {
+        border-bottom: 1px solid $borderColor;
+
+        .box-feature {
+            border-left: 1px solid $borderColor;
+            border-top: 1px solid $borderColor;
+            border-right: 1px solid $borderColor;
+            width: 34%;
+            padding:70px 35px 80px 35px;
+            img {
+                height: 62px;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                @include font(20px, 800 , 1px, 1.3);
+                margin-bottom: 15px;
+                margin-block-end: 0;
+                margin-block-start: 0;
+            }
+
+            p {
+                margin-top: 18px;
+                @include font(14px, 300, 0.28px , 1.71);
+                color: #00101e;
+            }
+
+        }
+        .box-feature:nth-child(3), .box-feature:nth-child(2){
+            border-left: unset;
+            width: 33%;
+        }
+    }
+
+    .benefit {
+        .left {
+            width: 67%;
+            border-right: 1px solid $borderColor;
+            border-left: 1px solid $borderColor;
+            .text-content {
+                padding-top: 75px;
+                padding-bottom: 64px;
+                padding-right: 20px;
+                h1 {
+                    @include font(32px,800, 1.6px, 0.81);
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    @include font(14px, 300, 0.28px, 1.71);
+                }
+            }
+        }
+
+        .right {
+            width: 33%;
+            @include flexCustom(flex, unset, center);
+            .text-box {
+                padding-top:20px ;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                @include font(50px, 800, normal, 0.52);
+                color: $blueLight;
+                border-left: 3px solid $blueLight;
+            }
+        }
+    }
+
+    .list-benefits {
+        border-bottom: 1px solid $borderColor;
+        
+        .item {
+            border-left: 1px solid $borderColor;
+            width: 32%;
+            margin-right: 2%;
+            &:nth-child(2){
+                width: 31%;
+                margin-right: 2%;
+            }
+
+            &:nth-child(3) {
+                width: 33%;
+                margin-right: 0;
+            }
+
+            .text-content{
+                padding: 20px 25px;
+                h6 {
+                    @include font(20px, 800, 1px, 1.3);
+                    margin-bottom: 15px !important;
+                }
+
+                p {
+                    @include font(14px, 300, 2.28, 1.71);
+                    color: #00101e;
+                }
+            }
+        }
+    }
+    .email-notification {
+        
+        margin: 3.1rem 0px 0 -6.1rem;
+        padding: 4rem 1.8rem 4rem 6.1rem;
+        background-image: url('../../images/Newsletter-Banner.png');
+        &__text {
+          color: $white;
+          padding-bottom: 1.5rem;
+        }
+      
+        &__form {
+          input {
+            padding: $padding-lg-all;
+            border: $borderFrame;
+            width: 100%;
+          }
+      
+          button {
+            margin-left: 0.7rem;
+          }
+        }
+    }
+}
+}

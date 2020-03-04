@@ -1,0 +1,49 @@
+$borderColor : #0a1f30;
+.header-big {
+    background-color: #00111f;
+}
+.header-service {
+    .header-border {
+        &::after {
+            content: '';
+            overflow: hidden;
+            position: absolute;
+            height: 6px;
+            max-width: 1366px;
+            width: 100%;
+            border-top: 1px solid #0a1f30;
+            left: 0;
+            top: 0;
+        
+        }
+    }
+    //background-image: url('../../images/banner-image.png');
+    height: 172px;
+
+    .right-header {
+
+        @include flexCustom(flex, flex-start, center);
+
+    
+        height: 172px;;
+        width: 100%;
+        padding-left: 20px;
+    
+    
+        border-left: 1px solid $borderColor;
+        border-right: 1px solid $borderColor;
+
+        h1 {
+            padding-top: 55px;
+            @include font(136px, 800, normal, 0.75);
+            color: #ffffff;
+        }
+
+        h2 {
+            @include font(3em, 800, normal, 3.01);
+            color: #ffffff;
+        }
+    }
+
+
+}

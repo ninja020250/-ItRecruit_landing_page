@@ -1,0 +1,179 @@
+@import "../variable";
+.body-big {
+  .service-outside { 
+    border-bottom: 1px solid $borderColor;
+  }
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .big-title {
+    font-family: Muli;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    // line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .medium-title {
+    font-family: Muli;
+    font-size: 1rem;
+    font-weight: 200;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .people-service {
+    @include flexCustom(flex, center, flex-end);
+  }
+
+  .service-img-inner {
+    max-width: 394px;
+    border-left: 1px solid $borderColor;
+    border-right: 1px solid $borderColor;
+    margin-left: -80px;
+    img {
+      margin-left: -60px;
+      margin-bottom: -51px;
+    }
+  }
+  .slogan-service {
+    .service-slogan-inner,.service-slogan-inner-mobile {
+      @include flexCustom(flex, flex-start, center);
+      margin-right: 97px;
+      margin-left: -97px;
+      height: 100%;
+      max-width: 768px;
+      border-right: 1px solid $borderColor;
+    }
+  }
+
+  .slogan-service {
+    @include flexCustom(flex, center, center);
+    .slogan-title {
+      margin-bottom: 17px;
+      font-family: Muli;
+      font-size: 34px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 1.7px;
+      text-align: left;
+      color: #00101e;
+    }
+  }
+  .slogan-content {
+    margin-top: 17px;
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: 0.36px;
+    text-align: left;
+    color: #00101e;
+  }
+
+  .service-getin-touch {
+    width: 100%;
+    @include flexCustom(flex, center, center);
+    .getin-touch-content {
+      @include flexCustom(flex, flex-start, center);
+      width: 1172px;
+      height: 200px;
+      border-left: 1px solid $borderColor;
+      border-right: 1px solid $borderColor;
+      .text-box {
+        height: 85px;
+        padding-left: 21px;
+        border-left: 3px solid $blueLight;
+        @include flexCustom(flex, flex-start, center);
+        h1 {
+          font-family: Muli;
+          font-size: 30px;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 0.87;
+          letter-spacing: normal;
+          text-align: left;
+          color: #00101e;
+        }
+      }
+    }
+  }
+
+  .email-notification-mobile {
+    display: none;
+  }
+  .email-notification, .email-notification-mobile {
+    .email-form {
+      @include flexCustom(flex, flex-end, center);
+    }
+
+  
+
+    &__text {
+      font-family: Muli;
+      font-size: 20px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #ffffff;
+      color: $white;
+      padding-bottom: 1.5rem;
+    }
+
+    &__form {
+      width: 95%;
+      input,
+      textarea {
+        margin-top: 20px;
+        padding: $padding-lg-all;
+        border: $borderFrame;
+        width: 100%;
+        &::placeholder {
+          opacity: 0.5;
+          font-family: Muli;
+          font-size: 16px;
+          font-weight: 200;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: left;
+          color: rgba(0, 16, 30, 0.5);
+        }
+      }
+
+      button {
+        margin-top: 20px;
+      }
+
+      .large-input {
+        height: 100px;
+      }
+    }
+  }
+}
+
+.services .email-notification , .services .email-notification-mobile{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 97px 0 -40px;
+  padding: 4rem 1.8rem 4rem 6.1rem;
+  background-image: url("../../images/Getintouch_bg.jpg");
+}

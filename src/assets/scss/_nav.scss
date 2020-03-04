@@ -1,0 +1,126 @@
+$borderColor: #0a1f30;
+.main-nav {
+  z-index: 999;
+  height: 76px;
+  border-bottom: 1px solid $borderColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .left-nav {
+    height: 76px;
+  }
+
+  .right-nav {
+    position: relative;
+    .btn-language {
+      color: #76bbf7;
+      position: absolute;
+      right: -60px;
+      top : 30px;
+      transform: translateX(-50%);
+    }
+    .top-menu {
+      li {
+        &:nth-child(5){
+          max-width: 178px;
+        }
+        &:nth-child(2){
+          max-width: 122px;
+        }
+        margin: 0 30px 0 0;
+        position: relative;
+        .active {
+          color: #06d0ff;
+          position: relative;
+          border-bottom: 2px solid #06d0ff;
+          &::after {
+            width: 100%;
+          }
+        }
+        a {
+          text-align: center;
+          display: flex;
+          color: #76bbf7;
+          text-decoration: none;
+          position: relative;
+          height: 76px;
+          justify-content: center;
+          align-items: center;
+          line-height: 1.7;
+          /*&::after {
+            width: 0;
+            -webkit-transition: all 0.3s ease-in;
+            -moz-transition: all 0.3s ease-in;
+            -ms-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            content: "";
+            display: block;
+            bottom: 0;
+            position: absolute;
+            height: 2px;
+
+            background: #06d0ff;
+            transform: translateY(30px);
+          }*/
+          
+          &:hover{
+            &::after {
+              width: 100%;
+            }
+          }
+
+          
+        }
+      }
+    }
+    .specialBtn {
+      position: relative;
+      padding: 13px 20px;
+      color: white;
+      background-color: $blueLight;
+      transition: all .2s ease;
+      @include font(16px, 600, 0.23, 1);
+      &:hover{
+        text-decoration: none;
+        background:white;
+        color: $blueLight ;
+      }
+    }
+  }
+  .active-special {
+    border-bottom: 2px solid #06d0ff;
+}
+}
+
+
+#nav_mobile{
+  display: none;
+  background: rgb(0, 18, 34);;
+  .nav-item{
+    padding: .5rem 1rem;
+    line-height: 1.5;
+  }
+  .mobile-activate-li{
+    color: #06d0ff;
+    font-weight: bold;
+    transition: all .2s ease;
+  }
+  .request-btn
+  {
+background: #06d0ff;
+padding: .5rem .5rem;
+text-align: center;
+height: unset;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #main-nav{
+    display: none;
+  }
+  #nav_mobile{
+   display: unset;
+  }
+  
+}

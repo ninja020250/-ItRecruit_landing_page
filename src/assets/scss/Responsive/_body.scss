@@ -1,0 +1,276 @@
+@media screen and (max-width: 1200px) {
+    .body {
+        display: none;
+    }
+    .body-mobile {
+        display: block !important;
+        .smart-boxs {
+            margin-right: $marginSize;
+            margin-left: $marginSize;
+            .box {
+                width: unset !important;
+                margin-right: unset !important;
+                background-size: cover ;
+                background-image: unset !important;
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+
+            }
+            .box1, .box2, .box3 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url('../../images/bg-box1.png') !important;
+                background-size: cover ;
+                height: 200px;
+                max-width: unset !important;
+                margin-right: unset !important;
+                padding: 0 30px;
+            }
+
+            .box1  ,.box2{
+                
+                margin-right: 15px !important;
+            }
+            
+        }
+        .slogan {
+            margin-left: $marginSize;
+            margin-right:$marginSize;
+            flex-direction: column;
+            border-left: 1px solid #ededed;
+            border-right: 1px solid #ededed;
+            .left {
+                border-right: unset !important;
+                padding-bottom: 0 !important;
+                padding-top: 50px !important;
+                .text-box {
+                    padding-left: 30px;
+                    text-align: left !important;
+                    border-right: unset !important;
+                    border-left: 3px solid $blueLight;
+                    h1{
+                        line-height: 1.2 !important;
+                    }
+                }
+            }
+            .right {
+                width: 100% !important;
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+                border-right: unset !important;
+                .text-content {
+                    padding-left: 30px !important;
+                    h1{
+                        line-height: 1.2 !important;
+                    }
+                }
+            }
+        }
+
+        .features {
+            margin-right: $marginSize !important;
+            margin-left: $marginSize !important;
+        }
+
+        .list-benefits {
+            margin-right: $marginSize !important;
+            margin-left: $marginSize !important;
+            .benefit-row {
+                display: flex;
+                justify-content: space-between;
+                :nth-child(3){
+                    border-right: 1px solid $borderColor;
+                }
+                .col-sm-4 {
+                    padding-right: 0 !important;
+                    padding-left : 0 !important;
+                    max-width: 33% !important;
+                    img {
+                        width: 100% !important;
+                    }
+                }
+                .item {
+                    margin-right: 0 !important;
+                    width: unset !important;
+                    .text-content {
+                        h6 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        display: none;
+    }
+    .body-mobile {
+        .smart-boxs {
+            margin-right: $marginSize;
+            margin-left: $marginSize;
+            .box {
+                margin-bottom: 10px;
+            }
+
+            :nth-child(3){
+                margin-bottom: 0 !important;
+            }
+            .box1, .box2, .box3 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url('../../images/bg-box1.png') !important;
+                background-size: cover ;
+                height: 200px;
+                max-width: unset !important;
+                margin-right: unset !important;
+                padding: 0 30px;
+            }
+            .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .box1  ,.box2{
+                
+                margin-right: 0px !important;
+            }
+            h6 {
+                :nth-child(1),:nth-child(2){
+                    margin-bottom: 0px !important;
+                }
+                
+            }
+            
+        }
+        .slogan {
+            margin-left: $marginSize;
+            margin-right:$marginSize;
+            flex-direction: column;
+            border-left: 1px solid #ededed;
+            border-right: 1px solid #ededed;
+            .left {
+                border-right: unset !important;
+                padding-bottom: 0 !important;
+                padding-top: 50px !important;
+                .text-box {
+                    padding-left: 30px;
+                    text-align: left !important;
+                    border-right: unset !important;
+                    border-left: 3px solid $blueLight;
+                    h1{
+                        line-height: 1.2 !important;
+                    }
+                }
+            }
+            .right {
+                width: 100% !important;
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+                border-right: unset !important;
+                .text-content {
+                    padding-left: 30px !important;
+                }
+            }
+        }
+
+        .features {
+            margin-right: $marginSize !important;
+            margin-left: $marginSize !important;
+            .box-feature{
+                border-left: 1px solid #ededed !important;
+            }
+        }
+
+        .list-benefits {
+            margin-right: $marginSize !important;
+            margin-left: $marginSize !important;
+            .benefit-row {
+                display: flex;
+                justify-content: space-between;
+                :nth-child(3){
+                    border-right: 1px solid $borderColor;
+                }
+                .col-sm-4,.item{
+                    padding-right: 0 !important;
+                    padding-left : 0 !important;
+                    max-width: 100% !important;
+                    img {
+                        width: 100% !important;
+                    }
+                }
+                .item {
+                    margin-right: 0 !important;
+                    width: unset !important;
+                    .text-content {
+                        h6 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+@media screen and (max-width: 376px) {
+    .body-mobile {
+        .slogan {
+            .left {
+                .text-box {
+                    font-size: 45px !important;
+                    h1{
+                        line-height: 1.2 !important;
+                    }
+                }
+            }
+            .right {
+                padding-top: 0 !important;
+                .text-content {
+                    margin-right: 10px;
+                    margin-bottom: 15px !important;
+                    h1 {
+                        line-height: 1.2 !important;
+                        font-size: 22px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+        }
+        .list-benefits {
+            .item {
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .about {
+        .head {
+            .heading-title {
+                height: 140px;
+                .text-content {
+                    height: 140px;
+                }
+            }
+        }
+    }
+
+    .services {
+        .header-service {
+            height: 140px;
+            .right-header {
+                height: 140px;
+            }
+        }
+    }
+}
+  

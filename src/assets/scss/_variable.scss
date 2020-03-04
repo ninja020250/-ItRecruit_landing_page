@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900&display=swap');
+// General
+$fontFamily-Muli: 'Muli', sans-serif;
+
+
+$borderColor: #ededed;
+$borderFrame: solid 1px $borderColor;
+
+$blueLight: #06d0ff;
+
+$white: #ffffff;
+$whiteSmoke: #fbfbfb;
+$fontFamily-Muli: 'Muli', sans-serif;
+
+$bg-btn-disable: #e8e8e8;
+
+
+$fontWeightBold: 700;
+$fontWeightExtraBold: 800;
+$fontWeightBoldBlack: 900;
+$fontWeightNormal: 400;
+$fontWeightLight: 300;
+
+//Just using for Button
+$padding-sm-btn: 8px 16px; //Height: 30px
+$padding-md-btn: 12px 24px; //Height: 40px
+$padding-lg-btn: 16px 32px; //Height: 50px
+
+//Others....
+$padding-sm-all: 8px;
+$padding-md-all: 10px;
+$padding-lg-all: 12px;
+
+
+$marginSize : 16px;
